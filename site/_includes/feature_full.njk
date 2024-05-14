@@ -1,0 +1,65 @@
+<div id="{{ feature.id }}" class="feature baseline-{{ feature.status.baseline }}">
+  {% include "baseline.njk" %}
+  
+  <h1>{{ feature.name }}</h1>
+  <p>{{ feature.description_html | safe }}</p>
+  
+  <h3>Compatibility</h3>
+  {% include "compat.njk" %}
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    {% if feature.spec.length %}
+      <li>Specifications:
+        <ul>
+          {% for spec in feature.spec %}
+            <li><a href="{{ spec }}">{{ spec }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+    {% if feature.caniuse %}<li><a href="https://caniuse.com/{{ feature.caniuse }}">Can I Use</a></li>{% endif %}
+    {% if feature.usage_stats %}<li><a href="{{ feature.usage_stats }}">Usage stats</a></li>{% endif %}
+    {% if feature.mdnUrls.length %}
+      <li>MDN documentation:
+        <ul>
+          {% for url in feature.mdnUrls %}
+            <li><a href="{{ url }}">{{ url }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#{{ feature.name }}">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement {{ feature.name }}+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q={{ feature.name }}">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement {{ feature.name }}+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q={{ feature.name }}">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement {{ feature.name }}+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    {% for bcd in feature.bcdData %}
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/{{ bcd.compat.source_file }}">{{ bcd.key }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

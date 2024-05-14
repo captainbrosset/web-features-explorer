@@ -1,0 +1,20 @@
+<ul class="compat">
+  {% for browser in browsers %}
+    <li class="browser browser-{{ browser.id }}{% if feature.status.support[browser.id] %} supported{% endif %}">
+      <strong>{{ browser.name }}</strong>
+      {% if feature.status.support[browser.id] %}
+        {{ feature.status.support[browser.id] }}
+      {% else %}
+        ❌
+        <em>
+          {% if feature.implUrls[browser.id] and feature.implUrls[browser.id].length %}
+            See
+            {% for implUrl in feature.implUrls[browser.id] %}
+              <a href="{{ implUrl }}">{{ implUrl }}</a>
+            {% endfor %}
+          {% endif %}
+        </em>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
