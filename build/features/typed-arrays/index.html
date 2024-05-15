@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Typed arrays (initial support)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="typed-arrays" class="feature baseline-high">
+  <div class="availability">
+  
+  
+  Widely available since 2018-01-29 (baseline high)
+</div>
+  
+  <h1>Typed arrays (initial support)</h1>
+  <p>Typed arrays are ordered lists of JavaScript values, where all values are of the same numerical type, such as 8-bit integers or 32-bit floating point numbers.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        7
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        18
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        12
+      
+    </li>
+  
+    <li class="browser browser-firefox supported">
+      <strong>Firefox</strong>
+      
+        4
+      
+    </li>
+  
+    <li class="browser browser-firefox_android supported">
+      <strong>Firefox on Android</strong>
+      
+        4
+      
+    </li>
+  
+    <li class="browser browser-safari supported">
+      <strong>Safari</strong>
+      
+        5.1
+      
+    </li>
+  
+    <li class="browser browser-safari_ios supported">
+      <strong>Safari on iOS</strong>
+      
+        4.2
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#table-49">https://tc39.es/ecma262/multipage/indexed-collections.html#table-49</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-constructors">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-constructors</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray.bytes_per_element">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray.bytes_per_element</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.buffer">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.buffer</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.bytelength">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.bytelength</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.byteoffset">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.byteoffset</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.join">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.join</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.length">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-get-%25typedarray%25.prototype.length</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-properties-of-the-typedarray-constructors">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-properties-of-the-typedarray-constructors</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.reverse">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.reverse</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.set">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.set</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.slice">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.slice</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.sort">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.sort</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.subarray">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.subarray</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tolocalestring">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tolocalestring</a></li>
+          
+            <li><a href="https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tostring">https://tc39.es/ecma262/multipage/indexed-collections.html#sec-%25typedarray%25.prototype.tostring</a></li>
+          
+        </ul>
+      </li>
+    
+    
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array/Float32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array/Float32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array/Float64Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array/Float64Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array/Int16Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array/Int16Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array/Int32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array/Int32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array/Int8Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array/Int8Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/BYTES_PER_ELEMENT</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/buffer">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/buffer</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteLength</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/byteOffset</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/join">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/join</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/length">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/length</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/name">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/name</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/reverse">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/reverse</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/set">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/set</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/slice">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/slice</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/sort</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/subarray</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toLocaleString">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toLocaleString</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toString">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/toString</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array/Uint16Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array/Uint16Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array/Uint32Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array/Uint32Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array/Uint8Array">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array/Uint8Array</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray/Uint8ClampedArray">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray/Uint8ClampedArray</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Typed arrays (initial support)">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Typed arrays (initial support)+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Typed arrays (initial support)">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Typed arrays (initial support)+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Typed arrays (initial support)">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Typed arrays (initial support)+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float32Array.json">javascript.builtins.Float32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float32Array.json">javascript.builtins.Float32Array.Float32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float32Array.json">javascript.builtins.Float32Array.Float32Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float32Array.json">javascript.builtins.Float32Array.Float32Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float64Array.json">javascript.builtins.Float64Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float64Array.json">javascript.builtins.Float64Array.Float64Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float64Array.json">javascript.builtins.Float64Array.Float64Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float64Array.json">javascript.builtins.Float64Array.Float64Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int16Array.json">javascript.builtins.Int16Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int16Array.json">javascript.builtins.Int16Array.Int16Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int16Array.json">javascript.builtins.Int16Array.Int16Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int32Array.json">javascript.builtins.Int32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int32Array.json">javascript.builtins.Int32Array.Int32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int32Array.json">javascript.builtins.Int32Array.Int32Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int32Array.json">javascript.builtins.Int32Array.Int32Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int8Array.json">javascript.builtins.Int8Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int8Array.json">javascript.builtins.Int8Array.Int8Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int8Array.json">javascript.builtins.Int8Array.Int8Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int8Array.json">javascript.builtins.Int8Array.Int8Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.BYTES_PER_ELEMENT</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.buffer</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.byteLength</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.byteOffset</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.join</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.length</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.name</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.named_properties</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.reverse</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.set</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.slice</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.sort</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.subarray</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json">javascript.builtins.TypedArray.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint16Array.json">javascript.builtins.Uint16Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint16Array.json">javascript.builtins.Uint16Array.Uint16Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint16Array.json">javascript.builtins.Uint16Array.Uint16Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint16Array.json">javascript.builtins.Uint16Array.Uint16Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint32Array.json">javascript.builtins.Uint32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint32Array.json">javascript.builtins.Uint32Array.Uint32Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint32Array.json">javascript.builtins.Uint32Array.Uint32Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint32Array.json">javascript.builtins.Uint32Array.Uint32Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8Array.json">javascript.builtins.Uint8Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8Array.json">javascript.builtins.Uint8Array.Uint8Array</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8Array.json">javascript.builtins.Uint8Array.Uint8Array.constructor_without_parameters</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8Array.json">javascript.builtins.Uint8Array.Uint8Array.iterable_allowed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8ClampedArray.json">javascript.builtins.Uint8ClampedArray</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8ClampedArray.json">javascript.builtins.Uint8ClampedArray.Uint8ClampedArray</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8ClampedArray.json">javascript.builtins.Uint8ClampedArray.Uint8ClampedArray.iterable_allowed</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

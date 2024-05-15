@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>blocking=&amp;quot;render&amp;quot;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="blocking-render" class="feature baseline-false">
+  <div class="availability">
+  Limited availability
+  
+  
+</div>
+  
+  <h1>blocking=&quot;render&quot;</h1>
+  <p>The <code>blocking="render"</code> attribute for <code>&#x3C;link></code>, <code>&#x3C;script></code>, and <code>&#x3C;style></code> elements blocks rendering until the external script or stylesheet has been loaded. For <code>&#x3C;link rel="expect"></code>, rendering is blocked until a specific element is in the DOM.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        105
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        105
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        105
+      
+    </li>
+  
+    <li class="browser browser-firefox">
+      <strong>Firefox</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1751383">https://bugzil.la/1751383</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-firefox_android">
+      <strong>Firefox on Android</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1751383">https://bugzil.la/1751383</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari">
+      <strong>Safari</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://webkit.org/b/267232">https://webkit.org/b/267232</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari_ios">
+      <strong>Safari on iOS</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://webkit.org/b/267232">https://webkit.org/b/267232</a>
+            
+          
+        </em>
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes">https://html.spec.whatwg.org/multipage/urls-and-fetching.html#blocking-attributes</a></li>
+          
+        </ul>
+      </li>
+    
+    
+    <li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/4183">Usage stats</a></li>
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/blocking">https://developer.mozilla.org/docs/Web/API/HTMLLinkElement/blocking</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/blocking">https://developer.mozilla.org/docs/Web/API/HTMLScriptElement/blocking</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/blocking">https://developer.mozilla.org/docs/Web/API/HTMLStyleElement/blocking</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#blocking=&quot;render&quot;">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement blocking=&quot;render&quot;+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=blocking=&quot;render&quot;">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement blocking=&quot;render&quot;+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=blocking=&quot;render&quot;">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement blocking=&quot;render&quot;+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/HTMLLinkElement.json">api.HTMLLinkElement.blocking</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/HTMLScriptElement.json">api.HTMLScriptElement.blocking</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/HTMLStyleElement.json">api.HTMLStyleElement.blocking</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/html/elements/link.json">html.elements.link.blocking</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/html/elements/script.json">html.elements.script.blocking</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/html/elements/style.json">html.elements.style.blocking</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

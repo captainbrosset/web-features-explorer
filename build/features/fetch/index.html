@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fetch (initial support)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="fetch" class="feature baseline-high">
+  <div class="availability">
+  
+  
+  Widely available since 2019-09-27 (baseline high)
+</div>
+  
+  <h1>Fetch (initial support)</h1>
+  <p>The <code>fetch()</code> method makes asynchronous HTTP requests.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        42
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        42
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        14
+      
+    </li>
+  
+    <li class="browser browser-firefox supported">
+      <strong>Firefox</strong>
+      
+        39
+      
+    </li>
+  
+    <li class="browser browser-firefox_android supported">
+      <strong>Firefox on Android</strong>
+      
+        39
+      
+    </li>
+  
+    <li class="browser browser-safari supported">
+      <strong>Safari</strong>
+      
+        10.1
+      
+    </li>
+  
+    <li class="browser browser-safari_ios supported">
+      <strong>Safari on iOS</strong>
+      
+        10.3
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://fetch.spec.whatwg.org/">https://fetch.spec.whatwg.org/</a></li>
+          
+        </ul>
+      </li>
+    
+    <li><a href="https://caniuse.com/fetch">Can I Use</a></li>
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers">https://developer.mozilla.org/docs/Web/API/Headers</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/Headers">https://developer.mozilla.org/docs/Web/API/Headers/Headers</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/append">https://developer.mozilla.org/docs/Web/API/Headers/append</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/delete">https://developer.mozilla.org/docs/Web/API/Headers/delete</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/get">https://developer.mozilla.org/docs/Web/API/Headers/get</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/has">https://developer.mozilla.org/docs/Web/API/Headers/has</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Headers/set">https://developer.mozilla.org/docs/Web/API/Headers/set</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request">https://developer.mozilla.org/docs/Web/API/Request</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/Request">https://developer.mozilla.org/docs/Web/API/Request/Request</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/arrayBuffer">https://developer.mozilla.org/docs/Web/API/Request/arrayBuffer</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/blob">https://developer.mozilla.org/docs/Web/API/Request/blob</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/bodyUsed">https://developer.mozilla.org/docs/Web/API/Request/bodyUsed</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/clone">https://developer.mozilla.org/docs/Web/API/Request/clone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/credentials">https://developer.mozilla.org/docs/Web/API/Request/credentials</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/headers">https://developer.mozilla.org/docs/Web/API/Request/headers</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/json">https://developer.mozilla.org/docs/Web/API/Request/json</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/method">https://developer.mozilla.org/docs/Web/API/Request/method</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/mode">https://developer.mozilla.org/docs/Web/API/Request/mode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/text">https://developer.mozilla.org/docs/Web/API/Request/text</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Request/url">https://developer.mozilla.org/docs/Web/API/Request/url</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response">https://developer.mozilla.org/docs/Web/API/Response</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/Response">https://developer.mozilla.org/docs/Web/API/Response/Response</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/arrayBuffer">https://developer.mozilla.org/docs/Web/API/Response/arrayBuffer</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/blob">https://developer.mozilla.org/docs/Web/API/Response/blob</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/bodyUsed">https://developer.mozilla.org/docs/Web/API/Response/bodyUsed</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/clone">https://developer.mozilla.org/docs/Web/API/Response/clone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/headers">https://developer.mozilla.org/docs/Web/API/Response/headers</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/json">https://developer.mozilla.org/docs/Web/API/Response/json</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/ok">https://developer.mozilla.org/docs/Web/API/Response/ok</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/status">https://developer.mozilla.org/docs/Web/API/Response/status</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/statusText">https://developer.mozilla.org/docs/Web/API/Response/statusText</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/text">https://developer.mozilla.org/docs/Web/API/Response/text</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/type">https://developer.mozilla.org/docs/Web/API/Response/type</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Response/url">https://developer.mozilla.org/docs/Web/API/Response/url</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/fetch">https://developer.mozilla.org/docs/Web/API/fetch</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Fetch (initial support)">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Fetch (initial support)+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Fetch (initial support)">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Fetch (initial support)+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Fetch (initial support)">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Fetch (initial support)+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.Headers</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.append</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.delete</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.get</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.has</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Headers.json">api.Headers.set</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.Request</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.arrayBuffer</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.blob</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.bodyUsed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.clone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.credentials</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.headers</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.json</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.method</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.mode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.text</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Request.json">api.Request.url</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.Response</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.arrayBuffer</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.blob</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.bodyUsed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.clone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.headers</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.json</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.ok</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.status</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.statusText</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.text</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.type</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Response.json">api.Response.url</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/_globals/fetch.json">api.fetch</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

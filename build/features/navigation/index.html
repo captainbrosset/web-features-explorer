@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Navigation API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="navigation" class="feature baseline-false">
+  <div class="availability">
+  Limited availability
+  
+  
+</div>
+  
+  <h1>Navigation API</h1>
+  <p>The <code>navigation</code> API provides mechanisms to initiate, intercept, and manage browser navigation actions.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        102
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        102
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        102
+      
+    </li>
+  
+    <li class="browser browser-firefox">
+      <strong>Firefox</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1777171">https://bugzil.la/1777171</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-firefox_android">
+      <strong>Firefox on Android</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1777171">https://bugzil.la/1777171</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari">
+      <strong>Safari</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari_ios">
+      <strong>Safari on iOS</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api">https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-api</a></li>
+          
+        </ul>
+      </li>
+    
+    
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent">https://developer.mozilla.org/docs/Web/API/NavigateEvent</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/NavigateEvent">https://developer.mozilla.org/docs/Web/API/NavigateEvent/NavigateEvent</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/destination">https://developer.mozilla.org/docs/Web/API/NavigateEvent/destination</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/downloadRequest">https://developer.mozilla.org/docs/Web/API/NavigateEvent/downloadRequest</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/formData">https://developer.mozilla.org/docs/Web/API/NavigateEvent/formData</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/hashChange">https://developer.mozilla.org/docs/Web/API/NavigateEvent/hashChange</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/info">https://developer.mozilla.org/docs/Web/API/NavigateEvent/info</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/navigationType">https://developer.mozilla.org/docs/Web/API/NavigateEvent/navigationType</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/signal">https://developer.mozilla.org/docs/Web/API/NavigateEvent/signal</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigateEvent/userInitiated">https://developer.mozilla.org/docs/Web/API/NavigateEvent/userInitiated</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation">https://developer.mozilla.org/docs/Web/API/Navigation</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/back">https://developer.mozilla.org/docs/Web/API/Navigation/back</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/canGoBack">https://developer.mozilla.org/docs/Web/API/Navigation/canGoBack</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/canGoForward">https://developer.mozilla.org/docs/Web/API/Navigation/canGoForward</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/currentEntry">https://developer.mozilla.org/docs/Web/API/Navigation/currentEntry</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/currententrychange_event">https://developer.mozilla.org/docs/Web/API/Navigation/currententrychange_event</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/entries">https://developer.mozilla.org/docs/Web/API/Navigation/entries</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/forward">https://developer.mozilla.org/docs/Web/API/Navigation/forward</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/navigate">https://developer.mozilla.org/docs/Web/API/Navigation/navigate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/navigate_event">https://developer.mozilla.org/docs/Web/API/Navigation/navigate_event</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/navigateerror_event">https://developer.mozilla.org/docs/Web/API/Navigation/navigateerror_event</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/navigatesuccess_event">https://developer.mozilla.org/docs/Web/API/Navigation/navigatesuccess_event</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/reload">https://developer.mozilla.org/docs/Web/API/Navigation/reload</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/transition">https://developer.mozilla.org/docs/Web/API/Navigation/transition</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/traverseTo">https://developer.mozilla.org/docs/Web/API/Navigation/traverseTo</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Navigation/updateCurrentEntry">https://developer.mozilla.org/docs/Web/API/Navigation/updateCurrentEntry</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/">https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent">https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/NavigationCurrentEntryChangeEvent</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/from">https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/navigationType">https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent/navigationType</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination">https://developer.mozilla.org/docs/Web/API/NavigationDestination</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/getState">https://developer.mozilla.org/docs/Web/API/NavigationDestination/getState</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/id">https://developer.mozilla.org/docs/Web/API/NavigationDestination/id</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/index">https://developer.mozilla.org/docs/Web/API/NavigationDestination/index</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/key">https://developer.mozilla.org/docs/Web/API/NavigationDestination/key</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/sameDocument">https://developer.mozilla.org/docs/Web/API/NavigationDestination/sameDocument</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationDestination/url">https://developer.mozilla.org/docs/Web/API/NavigationDestination/url</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/dispose_event">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/dispose_event</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/getState">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/getState</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/id">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/id</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/index">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/index</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/key">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/key</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/sameDocument">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/sameDocument</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/url">https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry/url</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationTransition">https://developer.mozilla.org/docs/Web/API/NavigationTransition</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationTransition/finished">https://developer.mozilla.org/docs/Web/API/NavigationTransition/finished</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationTransition/from">https://developer.mozilla.org/docs/Web/API/NavigationTransition/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/NavigationTransition/navigationType">https://developer.mozilla.org/docs/Web/API/NavigationTransition/navigationType</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Window/navigation">https://developer.mozilla.org/docs/Web/API/Window/navigation</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Navigation API">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Navigation API+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Navigation API">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Navigation API+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Navigation API">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Navigation API+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.NavigateEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.destination</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.downloadRequest</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.formData</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.hashChange</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.info</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.navigationType</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.signal</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigateEvent.json">api.NavigateEvent.userInitiated</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.back</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.canGoBack</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.canGoForward</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.currentEntry</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.currententrychange_event</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.entries</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.forward</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.navigate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.navigate_event</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.navigateerror_event</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.navigatesuccess_event</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.reload</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.transition</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.traverseTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Navigation.json">api.Navigation.updateCurrentEntry</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationCurrentEntryChangeEvent.json">api.NavigationCurrentEntryChangeEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationCurrentEntryChangeEvent.json">api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChangeEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationCurrentEntryChangeEvent.json">api.NavigationCurrentEntryChangeEvent.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationCurrentEntryChangeEvent.json">api.NavigationCurrentEntryChangeEvent.navigationType</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.getState</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.id</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.index</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.key</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.sameDocument</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationDestination.json">api.NavigationDestination.url</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.dispose_event</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.getState</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.id</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.index</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.key</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.sameDocument</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationHistoryEntry.json">api.NavigationHistoryEntry.url</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationTransition.json">api.NavigationTransition</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationTransition.json">api.NavigationTransition.finished</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationTransition.json">api.NavigationTransition.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/NavigationTransition.json">api.NavigationTransition.navigationType</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Window.json">api.Window.navigation</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

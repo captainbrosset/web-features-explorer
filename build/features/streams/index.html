@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Streams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="streams" class="feature baseline-low">
+  <div class="availability">
+  
+  Newly available since 2022-06-28 (baseline low)
+  
+</div>
+  
+  <h1>Streams</h1>
+  <p>The streams API creates, composes, and consumes continuously generated data.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        59
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        59
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        79
+      
+    </li>
+  
+    <li class="browser browser-firefox supported">
+      <strong>Firefox</strong>
+      
+        102
+      
+    </li>
+  
+    <li class="browser browser-firefox_android supported">
+      <strong>Firefox on Android</strong>
+      
+        102
+      
+    </li>
+  
+    <li class="browser browser-safari supported">
+      <strong>Safari</strong>
+      
+        14.1
+      
+    </li>
+  
+    <li class="browser browser-safari_ios supported">
+      <strong>Safari on iOS</strong>
+      
+        14.5
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://streams.spec.whatwg.org/">https://streams.spec.whatwg.org/</a></li>
+          
+        </ul>
+      </li>
+    
+    <li><a href="https://caniuse.com/streams">Can I Use</a></li>
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy">https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy">https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/ByteLengthQueuingStrategy</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/highWaterMark">https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/highWaterMark</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/size">https://developer.mozilla.org/docs/Web/API/ByteLengthQueuingStrategy/size</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy">https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy">https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/CountQueuingStrategy</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark">https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/highWaterMark</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size">https://developer.mozilla.org/docs/Web/API/CountQueuingStrategy/size</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream">https://developer.mozilla.org/docs/Web/API/ReadableStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/ReadableStream">https://developer.mozilla.org/docs/Web/API/ReadableStream/ReadableStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/cancel">https://developer.mozilla.org/docs/Web/API/ReadableStream/cancel</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/getReader">https://developer.mozilla.org/docs/Web/API/ReadableStream/getReader</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/locked">https://developer.mozilla.org/docs/Web/API/ReadableStream/locked</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeThrough">https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeThrough</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeTo">https://developer.mozilla.org/docs/Web/API/ReadableStream/pipeTo</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/ReadableStream/tee">https://developer.mozilla.org/docs/Web/API/ReadableStream/tee</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStream">https://developer.mozilla.org/docs/Web/API/WritableStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStream/WritableStream">https://developer.mozilla.org/docs/Web/API/WritableStream/WritableStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStream/abort">https://developer.mozilla.org/docs/Web/API/WritableStream/abort</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStream/getWriter">https://developer.mozilla.org/docs/Web/API/WritableStream/getWriter</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStream/locked">https://developer.mozilla.org/docs/Web/API/WritableStream/locked</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController/error">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultController/error</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/abort">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/abort</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/close">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/close</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/closed">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/closed</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/desiredSize">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/desiredSize</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/ready">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/ready</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/releaseLock">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/releaseLock</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write">https://developer.mozilla.org/docs/Web/API/WritableStreamDefaultWriter/write</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Streams">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Streams+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Streams">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Streams+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Streams">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Streams+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ByteLengthQueuingStrategy.json">api.ByteLengthQueuingStrategy</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ByteLengthQueuingStrategy.json">api.ByteLengthQueuingStrategy.ByteLengthQueuingStrategy</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ByteLengthQueuingStrategy.json">api.ByteLengthQueuingStrategy.highWaterMark</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ByteLengthQueuingStrategy.json">api.ByteLengthQueuingStrategy.size</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CountQueuingStrategy.json">api.CountQueuingStrategy</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CountQueuingStrategy.json">api.CountQueuingStrategy.CountQueuingStrategy</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CountQueuingStrategy.json">api.CountQueuingStrategy.highWaterMark</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CountQueuingStrategy.json">api.CountQueuingStrategy.size</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.ReadableStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.cancel</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.getReader</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.locked</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.pipeThrough</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.pipeTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/ReadableStream.json">api.ReadableStream.tee</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStream.json">api.WritableStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStream.json">api.WritableStream.WritableStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStream.json">api.WritableStream.abort</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStream.json">api.WritableStream.getWriter</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStream.json">api.WritableStream.locked</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultController.json">api.WritableStreamDefaultController</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultController.json">api.WritableStreamDefaultController.error</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.abort</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.close</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.closed</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.desiredSize</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.ready</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.releaseLock</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/WritableStreamDefaultWriter.json">api.WritableStreamDefaultWriter.write</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

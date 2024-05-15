@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Offscreen canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="offscreen-canvas" class="feature baseline-low">
+  <div class="availability">
+  
+  Newly available since 2023-03-27 (baseline low)
+  
+</div>
+  
+  <h1>Offscreen canvas</h1>
+  <p>The <code>OffscreenCanvas</code> API provides a canvas that can be drawn to off screen, with no dependencies on the DOM, which can be used to run heavy rendering operations inside a worker context.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-firefox supported">
+      <strong>Firefox</strong>
+      
+        105
+      
+    </li>
+  
+    <li class="browser browser-firefox_android supported">
+      <strong>Firefox on Android</strong>
+      
+        105
+      
+    </li>
+  
+    <li class="browser browser-safari supported">
+      <strong>Safari</strong>
+      
+        16.4
+      
+    </li>
+  
+    <li class="browser browser-safari_ios supported">
+      <strong>Safari on iOS</strong>
+      
+        16.4
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface">https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface</a></li>
+          
+        </ul>
+      </li>
+    
+    <li><a href="https://caniuse.com/offscreencanvas">Can I Use</a></li>
+    <li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/1624">Usage stats</a></li>
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/transferControlToOffscreen">https://developer.mozilla.org/docs/Web/API/HTMLCanvasElement/transferControlToOffscreen</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/convertToBlob">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/convertToBlob</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/getContext">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/getContext</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/height">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/height</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/OffscreenCanvas">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/OffscreenCanvas</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/transferToImageBitmap">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/transferToImageBitmap</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/width">https://developer.mozilla.org/docs/Web/API/OffscreenCanvas/width</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D">https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Offscreen canvas">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Offscreen canvas+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Offscreen canvas">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Offscreen canvas+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Offscreen canvas">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Offscreen canvas+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/HTMLCanvasElement.json">api.HTMLCanvasElement.transferControlToOffscreen</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.convertToBlob</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.getContext</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.getContext.2d_context</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.getContext.bitmaprenderer_context</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.height</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.OffscreenCanvas</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.transferToImageBitmap</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvas.json">api.OffscreenCanvas.width</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.arc</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.arcTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.beginPath</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.bezierCurveTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.canvas</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.clearRect</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.clip</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.closePath</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.createImageData</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.createLinearGradient</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.createPattern</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.createRadialGradient</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.direction</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.drawImage</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.ellipse</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.fill</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.fillRect</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.fillStyle</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.fillText</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.font</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.getImageData</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.getLineDash</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.getTransform</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.globalAlpha</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.globalCompositeOperation</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.imageSmoothingEnabled</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.isPointInPath</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.isPointInStroke</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.lineCap</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.lineDashOffset</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.lineJoin</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.lineTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.lineWidth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.measureText</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.miterLimit</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.moveTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.putImageData</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.quadraticCurveTo</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.rect</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.resetTransform</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.restore</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.rotate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.save</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.scale</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.setLineDash</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.setTransform</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.shadowBlur</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.shadowColor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.shadowOffsetX</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.shadowOffsetY</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.stroke</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.strokeRect</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.strokeStyle</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.strokeText</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.textAlign</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.textBaseline</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.transform</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/OffscreenCanvasRenderingContext2D.json">api.OffscreenCanvasRenderingContext2D.translate</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Compression streams</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="compression-streams" class="feature baseline-low">
+  <div class="availability">
+  
+  Newly available since 2023-05-09 (baseline low)
+  
+</div>
+  
+  <h1>Compression streams</h1>
+  <p>The <code>CompressionStream</code> and <code>DecompressionStream</code> interfaces compress and decompress data using the gzip or deflate formats.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        80
+      
+    </li>
+  
+    <li class="browser browser-firefox supported">
+      <strong>Firefox</strong>
+      
+        113
+      
+    </li>
+  
+    <li class="browser browser-firefox_android supported">
+      <strong>Firefox on Android</strong>
+      
+        113
+      
+    </li>
+  
+    <li class="browser browser-safari supported">
+      <strong>Safari</strong>
+      
+        16.4
+      
+    </li>
+  
+    <li class="browser browser-safari_ios supported">
+      <strong>Safari on iOS</strong>
+      
+        16.4
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://wicg.github.io/compression/">https://wicg.github.io/compression/</a></li>
+          
+        </ul>
+      </li>
+    
+    
+    <li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/3060,https://chromestatus.com/metrics/feature/timeline/popularity/3061">Usage stats</a></li>
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CompressionStream">https://developer.mozilla.org/docs/Web/API/CompressionStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CompressionStream/CompressionStream">https://developer.mozilla.org/docs/Web/API/CompressionStream/CompressionStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CompressionStream/readable">https://developer.mozilla.org/docs/Web/API/CompressionStream/readable</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/CompressionStream/writable">https://developer.mozilla.org/docs/Web/API/CompressionStream/writable</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/DecompressionStream">https://developer.mozilla.org/docs/Web/API/DecompressionStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/DecompressionStream/DecompressionStream">https://developer.mozilla.org/docs/Web/API/DecompressionStream/DecompressionStream</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/DecompressionStream/readable">https://developer.mozilla.org/docs/Web/API/DecompressionStream/readable</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/DecompressionStream/writable">https://developer.mozilla.org/docs/Web/API/DecompressionStream/writable</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Compression streams">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Compression streams+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Compression streams">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Compression streams+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Compression streams">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Compression streams+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream.CompressionStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream.CompressionStream.deflate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream.CompressionStream.gzip</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream.readable</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/CompressionStream.json">api.CompressionStream.writable</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream.DecompressionStream</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream.DecompressionStream.deflate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream.DecompressionStream.gzip</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream.readable</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/DecompressionStream.json">api.DecompressionStream.writable</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

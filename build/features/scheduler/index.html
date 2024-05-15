@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Scheduler API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/baseline">Baseline</a></li>
+        <li><a href="/recent">Recent baseline</a></li>
+        <li><a href="/nobaseline">Non-baseline</a></li>
+        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="scheduler" class="feature baseline-false">
+  <div class="availability">
+  Limited availability
+  
+  
+</div>
+  
+  <h1>Scheduler API</h1>
+  <p>The <code>scheduler</code> API provides a way to prioritize all tasks belonging to an application.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome supported">
+      <strong>Chrome</strong>
+      
+        94
+      
+    </li>
+  
+    <li class="browser browser-chrome_android supported">
+      <strong>Chrome on Android</strong>
+      
+        94
+      
+    </li>
+  
+    <li class="browser browser-edge supported">
+      <strong>Edge</strong>
+      
+        94
+      
+    </li>
+  
+    <li class="browser browser-firefox">
+      <strong>Firefox</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-firefox_android">
+      <strong>Firefox on Android</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari">
+      <strong>Safari</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari_ios">
+      <strong>Safari on iOS</strong>
+      
+        ❌
+        <em>
+          
+        </em>
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://wicg.github.io/scheduling-apis/">https://wicg.github.io/scheduling-apis/</a></li>
+          
+        </ul>
+      </li>
+    
+    
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Scheduler">https://developer.mozilla.org/docs/Web/API/Scheduler</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Scheduler/postTask">https://developer.mozilla.org/docs/Web/API/Scheduler/postTask</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskController">https://developer.mozilla.org/docs/Web/API/TaskController</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskController/TaskController">https://developer.mozilla.org/docs/Web/API/TaskController/TaskController</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskController/setPriority">https://developer.mozilla.org/docs/Web/API/TaskController/setPriority</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent">https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/TaskPriorityChangeEvent">https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/TaskPriorityChangeEvent</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/previousPriority">https://developer.mozilla.org/docs/Web/API/TaskPriorityChangeEvent/previousPriority</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskSignal">https://developer.mozilla.org/docs/Web/API/TaskSignal</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/TaskSignal/priority">https://developer.mozilla.org/docs/Web/API/TaskSignal/priority</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/API/Window/scheduler">https://developer.mozilla.org/docs/Web/API/Window/scheduler</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Scheduler API">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Scheduler API+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Scheduler API">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Scheduler API+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Scheduler API">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Scheduler API+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Scheduler.json">api.Scheduler</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/Scheduler.json">api.Scheduler.postTask</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskController.json">api.TaskController</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskController.json">api.TaskController.TaskController</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskController.json">api.TaskController.setPriority</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskPriorityChangeEvent.json">api.TaskPriorityChangeEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskPriorityChangeEvent.json">api.TaskPriorityChangeEvent.TaskPriorityChangeEvent</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskPriorityChangeEvent.json">api.TaskPriorityChangeEvent.previousPriority</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskSignal.json">api.TaskSignal</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/TaskSignal.json">api.TaskSignal.priority</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/_globals/scheduler.json">api.scheduler</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>
