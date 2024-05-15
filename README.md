@@ -2,6 +2,8 @@
 
 A set of web pages to visualize the data that's maintained in the [web-platform-dx/web-features](https://github.com/web-platform-dx/web-features/) repository.
 
+Open the website: https://captainbrosset.github.io/web-features-explorer/build
+
 ## Architecture
 
 The project is a static site that uses [11ty](https://www.11ty.dev/) to generate the pages from the web-features repo data.
