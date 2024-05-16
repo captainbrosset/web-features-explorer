@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Temporal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/web-features-explorer/assets/styles.css">
+  </head>
+  <body>
+
+    <header><a href="/web-features-explorer/">web-features explorer</a></header>
+
+    <nav>
+      <ul>
+        <li><a href="/web-features-explorer/baseline">Baseline</a></li>
+        <li><a href="/web-features-explorer/recent">Recent baseline</a></li>
+        <li><a href="/web-features-explorer/nobaseline">Non-baseline</a></li>
+        <li><a href="/web-features-explorer/missingone">One engine missing</a></li>
+        <li><a href="/web-features-explorer/all">All features</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      
+<div id="temporal" class="feature baseline-false">
+  <div class="availability">
+  Limited availability
+  
+  
+</div>
+  
+  <h1>Temporal</h1>
+  <p>The <code>Temporal</code> API allows you to work with dates, times, time zones, and durations. It is more powerful than the <code>Date</code> API.</p>
+  
+  <h3>Compatibility</h3>
+  <ul class="compat">
+  
+    <li class="browser browser-chrome">
+      <strong>Chrome</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://crbug.com/v8/11544">https://crbug.com/v8/11544</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-chrome_android">
+      <strong>Chrome on Android</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://crbug.com/v8/11544">https://crbug.com/v8/11544</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-edge">
+      <strong>Edge</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://crbug.com/v8/11544">https://crbug.com/v8/11544</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-firefox">
+      <strong>Firefox</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1519167">https://bugzil.la/1519167</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-firefox_android">
+      <strong>Firefox on Android</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://bugzil.la/1519167">https://bugzil.la/1519167</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari">
+      <strong>Safari</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://webkit.org/b/223166">https://webkit.org/b/223166</a>
+            
+          
+        </em>
+      
+    </li>
+  
+    <li class="browser browser-safari_ios">
+      <strong>Safari on iOS</strong>
+      
+        ❌
+        <em>
+          
+            See
+            
+              <a href="https://webkit.org/b/223166">https://webkit.org/b/223166</a>
+            
+          
+        </em>
+      
+    </li>
+  
+</ul>
+    
+  <h3>Resources</h3>
+  <ul class="resources">
+    
+      <li>Specifications:
+        <ul>
+          
+            <li><a href="https://tc39.es/proposal-temporal/">https://tc39.es/proposal-temporal/</a></li>
+          
+        </ul>
+      </li>
+    
+    <li><a href="https://caniuse.com/temporal">Can I Use</a></li>
+    
+    
+      <li>MDN documentation:
+        <ul>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/Calendar">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/Calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateAdd">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateAdd</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateFromFields">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateFromFields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateUntil">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dateUntil</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/day">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/day</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dayOfWeek">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dayOfWeek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dayOfYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/dayOfYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInMonth">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInMonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInWeek">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInWeek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/daysInYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/era">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/era</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/eraYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/eraYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/fields">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/fields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/from">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/id">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/id</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/inLeapYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/inLeapYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/mergeFields">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/mergeFields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/frmonthom">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/frmonthom</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthCode">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthCode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthDayFromFields">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthDayFromFields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthsInYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/monthsInYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/toJSON">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/toJSON</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/toJSON">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/toJSON</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/weekOfYear">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/weekOfYear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/year">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/year</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/yearMonthFromFields">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Calendar/yearMonthFromFields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/Duration">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration/Duration</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/abs">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/abs</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/blank">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/blank</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/days">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/days</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/hours">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/hours</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/microseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/microseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/milliseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/milliseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/minutes">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/minutes</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/months">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/months</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/nanoseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/nanoseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/negated">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/negated</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/round">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/round</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/seconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/seconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/sign">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/sign</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/total">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/total</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/weeks">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/weeks</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/years">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/duration/years</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/Instant">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/Instant</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochmicroseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochmicroseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochmilliseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochmilliseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochnanoseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochnanoseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/epochseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochmicroseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochmicroseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochmilliseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochmilliseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochnanoseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochnanoseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/fromepochseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/round">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/round</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tozoneddatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tozoneddatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tozoneddatetimeiso">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/tozoneddatetimeiso</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/instant/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Now">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Now</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/instant">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/instant</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindateiso">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindateiso</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindatetimeiso">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/plaindatetimeiso</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/timezone">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/timezone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/zoneddatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/zoneddatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/zoneddatetimeiso">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/now/zoneddatetimeiso</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/PlainDate">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate/PlainDate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/day">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/day</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/dayofweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/dayofweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/dayofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/dayofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/daysinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/era">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/era</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/erayear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/erayear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/inleapyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/inleapyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/month">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/month</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/monthcode">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/monthcode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/monthsinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/monthsinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplaindatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplaindatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplainmonthday">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplainmonthday</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplainyearmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/toplainyearmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tozoneddatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/tozoneddatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/weekofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/weekofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/withcalendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/withcalendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/year">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindate/year</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/PlainDateTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime/PlainDateTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/day">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/day</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/dayofweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/dayofweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/dayofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/dayofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/daysinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/era">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/era</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/erayear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/erayear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/hour">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/hour</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/inleapyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/inleapyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/microsecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/microsecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/millisecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/millisecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/minute">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/minute</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/month">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/month</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/monthcode">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/monthcode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/monthsinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/monthsinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/nanosecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/nanosecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/round">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/round</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/second">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/second</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplainmonthday">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplainmonthday</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplaintime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplaintime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplainyearmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/toplainyearmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tozoneddatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/tozoneddatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/weekofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/weekofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withcalendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withcalendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withplaintime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/withplaintime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/year">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaindatetime/year</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainMonthDay">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainMonthDay</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainMonthDay/PlainMonthDay">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainMonthDay/PlainMonthDay</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/day">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/day</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/monthcode">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/monthcode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/toplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/toplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainmonthday/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/PlainTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime/PlainTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/hour">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/hour</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/microsecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/microsecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/millisecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/millisecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/minute">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/minute</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/nanosecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/nanosecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/round">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/round</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/second">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/second</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/toplaindatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/toplaindatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tozoneddatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/tozoneddatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plaintime/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth/PlainYearMonth">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth/PlainYearMonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/daysinmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/daysinmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/daysinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/daysinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/era">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/era</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/erayear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/erayear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/inleapyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/inleapyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/month">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/month</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/monthcode">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/monthcode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/monthsinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/monthsinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/toplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/toplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/year">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/plainyearmonth/year</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/TimeZone">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/TimeZone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/TimeZone/TimeZone">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/TimeZone/TimeZone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getinstantfor">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getinstantfor</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getnexttransition">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getnexttransition</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getoffsetnanosecondsfor">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getoffsetnanosecondsfor</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getoffsetstringfor">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getoffsetstringfor</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getplaindatetimefor">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getplaindatetimefor</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getpossibleinstantsfor">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getpossibleinstantsfor</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getprevioustransition">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/getprevioustransition</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/id">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/id</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/timezone/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime/ZonedDateTime">https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime/ZonedDateTime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/add">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/add</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/calendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/calendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/compare">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/compare</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/day">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/day</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/dayofweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/dayofweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/dayofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/dayofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinweek">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinweek</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/daysinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochmicroseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochmicroseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochmilliseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochmilliseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochnanoseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochnanoseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/epochseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/equals">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/equals</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/era">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/era</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/erayear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/erayear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/from">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/from</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/getisofields">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/getisofields</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/hour">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/hour</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/hoursinday">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/hoursinday</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/inleapyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/inleapyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/microsecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/microsecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/millisecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/millisecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/minute">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/minute</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/month">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/month</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/monthcode">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/monthcode</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/monthsinyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/monthsinyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/nanosecond">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/nanosecond</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/offset">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/offset</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/offsetnanoseconds">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/offsetnanoseconds</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/round">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/round</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/second">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/second</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/since">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/since</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/startofday">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/startofday</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/subtract">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/subtract</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/timezone">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/timezone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toinstant">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toinstant</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tojson">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tojson</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tolocalestring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tolocalestring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindatetime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaindatetime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplainmonthday">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplainmonthday</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaintime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplaintime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplainyearmonth">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/toplainyearmonth</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tostring">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/tostring</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/until">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/until</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/valueof">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/valueof</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/weekofyear">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/weekofyear</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/with">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/with</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withcalendar">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withcalendar</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withplaindate">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withplaindate</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withplaintime">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withplaintime</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withtimezone">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/withtimezone</a></li>
+          
+            <li><a href="https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/year">https://developer.mozilla.org/docs/web/javascript/reference/global_objects/temporal/zoneddatetime/year</a></li>
+          
+        </ul>
+      </li>
+    
+  </ul>
+
+  <h3>Vendor resources</h3>
+  <ul class="resources">
+    <li>
+      <strong>Chromium</strong>
+      <ul>
+        <li><a href="https://chromestatus.com/features#Temporal">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement Temporal+site%3Aissues.chromium.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>Mozilla</strong>
+      <ul>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=Temporal">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Temporal+site%3Abugzilla.mozilla.org">Bugs</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>WebKit</strong>
+      <ul>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=Temporal">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement Temporal+site%3Abugs.webkit.org">Bugs</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>BCD data</h3>
+  <ul class="resources">
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal.json">javascript.builtins.Temporal</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.Calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.dateAdd</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.dateFromFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.dateUntil</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.day</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.dayOfWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.dayOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.daysInMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.daysInWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.daysInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.era</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.eraYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.fields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.id</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.inLeapYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.mergeFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.month</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.monthDayFromFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.monthsInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.weekOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.year</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Calendar.json">javascript.builtins.Temporal.Calendar.yearMonthFromFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.Duration</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.abs</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.blank</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.days</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.hours</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.microseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.milliseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.minutes</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.months</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.nanoseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.negated</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.round</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.seconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.sign</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.total</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.weeks</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Duration.json">javascript.builtins.Temporal.Duration.years</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.Instant</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.epochMicroseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.epochMilliseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.epochNanoseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.epochSeconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.fromEpochMicroseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.fromEpochMilliseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.fromEpochNanoseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.fromEpochSeconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.round</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.toZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.toZonedDateTimeISO</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Instant.json">javascript.builtins.Temporal.Instant.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.instant</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.plainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.plainDateISO</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.plainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.plainDateTimeISO</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.timeZone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.zonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/Now.json">javascript.builtins.Temporal.Now.zonedDateTimeISO</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.PlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.day</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.dayOfWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.dayOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.daysInMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.daysInWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.daysInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.era</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.eraYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.inLeapYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.month</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.monthsInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toPlainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toPlainMonthDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toPlainYearMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.toZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.weekOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.withCalendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDate.json">javascript.builtins.Temporal.PlainDate.year</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.PlainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.day</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.dayOfWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.dayOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.daysInMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.daysInWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.daysInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.era</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.eraYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.hour</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.inLeapYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.microsecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.millisecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.minute</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.month</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.monthsInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.nanosecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.round</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.second</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toPlainMonthDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toPlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toPlainYearMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.toZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.weekOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.withCalendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.withPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.withPlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainDateTime.json">javascript.builtins.Temporal.PlainDateTime.year</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.PlainMonthDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.day</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.toPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainMonthDay.json">javascript.builtins.Temporal.PlainMonthDay.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.PlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.hour</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.microsecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.millisecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.minute</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.nanosecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.round</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.second</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.toPlainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.toZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainTime.json">javascript.builtins.Temporal.PlainTime.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.PlainYearMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.daysInMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.daysInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.era</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.eraYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.inLeapYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.month</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.monthsInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.toPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/PlainYearMonth.json">javascript.builtins.Temporal.PlainYearMonth.year</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.TimeZone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getInstantFor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getNextTransition</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getOffsetNanosecondsFor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getOffsetStringFor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getPlainDateTimeFor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getPossibleInstantsFor</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.getPreviousTransition</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.id</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/TimeZone.json">javascript.builtins.Temporal.TimeZone.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.ZonedDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.add</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.calendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.compare</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.day</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.dayOfWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.dayOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.daysInMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.daysInWeek</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.daysInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.epochMicroseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.epochMilliseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.epochNanoseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.epochSeconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.equals</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.era</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.eraYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.from</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.getISOFields</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.hour</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.hoursInDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.inLeapYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.microsecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.millisecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.minute</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.month</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.monthCode</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.monthsInYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.nanosecond</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.offset</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.offsetNanoseconds</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.round</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.second</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.since</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.startOfDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.subtract</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.timeZone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toInstant</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toJSON</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toLocaleString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toPlainDateTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toPlainMonthDay</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toPlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toPlainYearMonth</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.toString</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.until</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.valueOf</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.weekOfYear</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.with</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.withCalendar</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.withPlainDate</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.withPlainTime</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.withTimeZone</a></li>
+    
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal/ZonedDateTime.json">javascript.builtins.Temporal.ZonedDateTime.year</a></li>
+    
+  </ul>
+</div>
+    </main>
+
+  </body>
+</html>

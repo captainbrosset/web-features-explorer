@@ -1,3 +1,5 @@
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
 const BROWSERS = [
   { id: "chrome", name: "Chrome" },
   { id: "chrome_android", name: "Chrome on Android" },
@@ -72,6 +74,7 @@ async function getDeps() {
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPassthroughCopy("site/assets");
 
   // FIXME: Ideally, web-features would have this data.
@@ -189,7 +192,8 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "site",
-      output: "build",
+      output: "docs",
     },
+    pathPrefix: "/web-features-explorer/",
   };
 };

@@ -2,7 +2,7 @@
 
 A set of web pages to visualize the data that's maintained in the [web-platform-dx/web-features](https://github.com/web-platform-dx/web-features/) repository.
 
-Open the website: https://captainbrosset.github.io/web-features-explorer/build
+Open the website: https://captainbrosset.github.io/web-features-explorer/
 
 ## Architecture
 

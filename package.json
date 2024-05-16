@@ -7,7 +7,7 @@
     "web-features": "next"
   },
   "scripts": {
-    "build": "npx rimraf build && npx @11ty/eleventy",
+    "build": "npx rimraf docs && npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve"
   }
 }
