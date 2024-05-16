@@ -96,19 +96,19 @@ ul, li {
   background-repeat: no-repeat;
   background-position: .25rem center;
   background-size: 1.5rem;
-  background-image: url(/assets/baseline-limited.svg);
+  background-image: url(./baseline-limited.svg);
   float: right;
   margin: 0 0 1rem 1rem;
 }
 
 .feature.baseline-low .availability {
   --bg: var(--baseline-low-label-bg);
-  background-image: url(/assets/baseline-low.svg);
+  background-image: url(./baseline-low.svg);
 }
 
 .feature.baseline-high .availability {
   --bg: var(--baseline-high-label-bg);
-  background-image: url(/assets/baseline-high.svg);
+  background-image: url(./baseline-high.svg);
 }
 
 .compat {
@@ -135,21 +135,21 @@ ul, li {
 
 .compat .browser-chrome,
 .compat .browser-chrome_android {
-  background-image: url(/assets/chrome.svg);
+  background-image: url(./chrome.svg);
 }
 
 .compat .browser-firefox,
 .compat .browser-firefox_android {
-  background-image: url(/assets/firefox.svg);
+  background-image: url(./firefox.svg);
 }
 
 .compat .browser-edge {
-  background-image: url(/assets/edge.svg);
+  background-image: url(./edge.svg);
 }
 
 .compat .browser-safari,
 .compat .browser-safari_ios {
-  background-image: url(/assets/safari.svg);
+  background-image: url(./safari.svg);
 }
 
 .feature .resources, .feature .resources li {
