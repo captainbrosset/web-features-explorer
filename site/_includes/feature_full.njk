@@ -4,32 +4,12 @@
   <h1>{{ feature.name }}</h1>
   <p>{{ feature.description_html | safe }}</p>
   
-  <h3>Compatibility</h3>
+  <h3>Compatibility{% if feature.caniuse %} <span class="subtext">(<a href="https://caniuse.com/{{ feature.caniuse }}">view on caniuse.com</a>)</span>{% endif %}</h3>
   {% include "compat.njk" %}
-    
-  <h3>Resources</h3>
-  <ul class="resources">
-    {% if feature.spec.length %}
-      <li>Specifications:
-        <ul>
-          {% for spec in feature.spec %}
-            <li><a href="{{ spec }}">{{ spec }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endif %}
-    {% if feature.caniuse %}<li><a href="https://caniuse.com/{{ feature.caniuse }}">Can I Use</a></li>{% endif %}
-    {% if feature.usage_stats %}<li><a href="{{ feature.usage_stats }}">Usage stats</a></li>{% endif %}
-    {% if feature.mdnUrls.length %}
-      <li>MDN documentation:
-        <ul>
-          {% for url in feature.mdnUrls %}
-            <li><a href="{{ url }}">{{ url }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endif %}
-  </ul>
+  
+  {% include "mdn_docs.njk" %}
+
+  {% include "specs.njk" %}
 
   <h3>Vendor resources</h3>
   <ul class="resources">

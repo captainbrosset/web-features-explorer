@@ -10,7 +10,7 @@
           {% if feature.implUrls[browser.id] and feature.implUrls[browser.id].length %}
             See
             {% for implUrl in feature.implUrls[browser.id] %}
-              <a href="{{ implUrl }}">{{ implUrl }}</a>
+              <a href="{{ implUrl }}">{{ implUrl | replace("https://", "") }}</a>
             {% endfor %}
           {% endif %}
         </em>

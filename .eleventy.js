@@ -10,6 +10,79 @@ const BROWSERS = [
   { id: "safari_ios", name: "Safari on iOS" },
 ];
 
+const MDN_URL_ROOT = "https://developer.mozilla.org/docs/web/";
+
+function processMdnPath(path, area) {
+  if (area === "api") {
+    return path.replace(/\//g, ".");
+  }
+
+  if (area === "html") {
+    if (path.startsWith("Global_attributes/")) {
+      return path.substring("Global_attributes/".length) + " global attribute";
+    }
+
+    if (path.startsWith("Element/")) {
+      const attribute = path.includes("#") ? path.substring(path.indexOf("#") + 1) : null;
+      if (attribute) {
+        return `<${path.substring("Element/".length, path.indexOf("#"))} ${attribute}> attribute`;
+      } else {
+        return `<${path.substring("Element/".length)}> element`;
+      }
+    }
+
+    if (path.toLowerCase().startsWith("attributes/") && path.split("/").length === 3) {
+      const [_, attr, value] = path.split("/");
+      return `${attr}="${value}" attribute`;
+    }
+  }
+
+  if (area === "css") {
+    if (path.startsWith("color_value/")) {
+      return `${path.substring("color_value/".length)} color value`;
+    } else if (path.startsWith("gradient/")) {
+      return `${path.substring("gradient/".length)}() gradient function`;
+    } else if (path.startsWith("::")) {
+      return `${path} pseudo-element`;
+    } else if (path.startsWith(":")) {
+      return `${path} pseudo-class`;
+    } else if (path.startsWith("transform-function/")) {
+      return `${path.substring("transform-function/".length)}() function`;
+    } else {
+      return `${path} property`;
+    }
+  }
+
+  if (area === "javascript") {
+    if (path.toLowerCase().startsWith("reference/global_objects/")) {
+      const object = path.substring("reference/global_objects/".length);
+      if (object.includes("/")) {
+        return object.replace(/\//g, ".");
+      } else {
+        return `${object} global object`;
+      }
+    }
+
+    if (path.toLowerCase().startsWith("reference/operators/")) {
+      return `${path.substring("reference/operators/".length)} operator`;
+    }
+     
+    if (path.toLowerCase().startsWith("reference/statements/")) {
+      return `${path.substring("reference/statements/".length)} statement`;
+    }
+  }
+
+  return path;
+}
+
+function processMdnUrl(url) {
+  let path = url.substring(MDN_URL_ROOT.length);
+  const area = path.split("/")[0].toLowerCase();
+  path = path.substring(area.length + 1);
+  const title = processMdnPath(path, area);
+  return { title, url, area }
+}
+
 // Add more data to a feature's object, based on what our templates need.
 function augmentFeatureData(id, feature, bcd) {
   // Add the id.
@@ -34,14 +107,21 @@ function augmentFeatureData(id, feature, bcd) {
   }).filter(data => !!data);
 
   // Add MDN doc links, if any.
-  const mdnUrls = [];
+  const mdnUrls = {};
+  let hasMdnUrls = false;
   for (const { compat } of bcdKeysData) {
     if (compat.mdn_url) {
-      mdnUrls.push(compat.mdn_url);
+      const urlData = processMdnUrl(compat.mdn_url);
+      if (!mdnUrls[urlData.area]) {
+        mdnUrls[urlData.area] = [];
+      }
+      hasMdnUrls = true;
+      mdnUrls[urlData.area].push(urlData);
     }
   }
 
   feature.mdnUrls = mdnUrls;
+  feature.hasMdnUrls = hasMdnUrls;
 
   // Add the BCD data to the feature.
   feature.bcdData = bcdKeysData;
