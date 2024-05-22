@@ -12,10 +12,10 @@
 
     <nav>
       <ul>
-        <li><a href="/baseline">Baseline</a></li>
-        <li><a href="/recent">Recent baseline</a></li>
-        <li><a href="/nobaseline">Non-baseline</a></li>
-        <li><a href="/missingone">One engine missing</a></li>
+        <li><a href="/recent">Newly available</a></li>
+        <li><a href="/baseline">Widely available</a></li>
+        <li><a href="/nobaseline">Not yet available</a></li>
+        <li><a href="/missingone">Missing in just one engine</a></li>
         <li><a href="/all">All features</a></li>
       </ul>
     </nav>
@@ -23,6 +23,10 @@
     <main>
       {{ content | safe }}
     </main>
+
+    <footer>
+      <p>Generated on {{ versions.date }} using <a href="https://github.com/web-platform-dx/web-features/">web-features</a> <code>{{ versions.webFeatures }}</code> and <a href="https://github.com/mdn/browser-compat-data/">browser-compat-data</a> <code>{{ versions.bcd }}</code></p>
+    </footer>
 
   </body>
 </html>

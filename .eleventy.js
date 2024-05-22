@@ -157,6 +157,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPassthroughCopy("site/assets");
 
+  eleventyConfig.addGlobalData("versions", async () => {
+    const { default: webFeaturesPackageJson } = await import("./node_modules/web-features/package.json", {
+      assert: { type: "json" },
+    });
+
+    const { default: bcdPackageJson } = await import("./node_modules/@mdn/browser-compat-data/package.json", {
+      assert: { type: "json" },
+    });
+
+    return {
+      "date": (new Date()).toLocaleDateString(),
+      "webFeatures": webFeaturesPackageJson.version,
+      "bcd": bcdPackageJson.version
+    };
+  });
+
   // FIXME: Ideally, web-features would have this data.
   eleventyConfig.addGlobalData("browsers", async () => {
     return BROWSERS;
@@ -191,7 +207,10 @@ module.exports = function (eleventyConfig) {
       }
     }
 
-    return baseline;
+    return baseline.sort((a, b) => {
+      // Sort by baseline_high_date, descending, so the most recent is first.
+      return new Date(b.status.baseline_high_date) - new Date(a.status.baseline_high_date);
+    });
   });
 
   eleventyConfig.addGlobalData("nonBaselineFeatures", async () => {
