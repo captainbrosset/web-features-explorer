@@ -1,0 +1,15 @@
+---
+title: Features missing in Microsoft Edge
+layout: layout.njk
+---
+<h1>{{ title }}</h1>
+
+<p>These web features are not implemented in Microsoft Edge yet.</p>
+
+<ul class="features">
+  {% for feature in missingInEdgeFeatures %}
+    <li>
+      {% include "feature_short.njk" %}
+    </li>
+  {% endfor %}
+</ul>

@@ -48,6 +48,9 @@ function processMdnPath(path, area) {
       return `${path} pseudo-class`;
     } else if (path.startsWith("transform-function/")) {
       return `${path.substring("transform-function/".length)}() function`;
+    } else if (path.includes("#")) {
+      const [property, value] = path.split("#");
+      return `${property}: ${value}; declaration`;
     } else {
       return `${path} property`;
     }
@@ -286,6 +289,34 @@ module.exports = function (eleventyConfig) {
     }
 
     return missingOne;
+  });
+
+  eleventyConfig.addGlobalData("missingInEdgeFeatures", async () => {
+    const { features, bcd } = await getDeps();
+
+    const missingInEdge = [];
+
+    for (const id in features) {
+      const feature = features[id];
+      augmentFeatureData(id, feature, bcd);
+
+      // Only non-baseline features.
+      if (!feature.status.baseline) {
+        // And, out of those, only those that are missing support in just Edge.
+        const noSupport = [];
+        for (const { id: browserId } of BROWSERS) {
+          if (!feature.status.support[browserId]) {
+            noSupport.push(browserId);
+          }
+        }
+
+        if (noSupport.length === 1 && noSupport[0] === "edge") {
+          missingInEdge.push(feature);
+        }
+      }
+    }
+
+    return missingInEdge;
   });
 
   return {
