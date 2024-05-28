@@ -126,18 +126,21 @@ h3 .subtext {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
-  font-size: 0.75rem;
 }
 
 .compat .browser {
-  --bg: var(--browser-unsupported-bg);
-  padding: 0.25rem 0.25rem 0.25rem 1.75rem;
-  border-radius: 0.25rem;
-  border: 2px solid color-mix(in srgb, var(--bg) 90%, black);
-  background-color: var(--bg);
-  background-position: 0.25rem center;
-  background-repeat: no-repeat;
-  background-size: 1rem;
+	--bg: var(--browser-unsupported-bg);
+	padding: 1.25rem 0.55rem 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+	border: 2px solid color-mix(in srgb, var(--bg) 90%, black);
+	background-color: var(--bg);
+	background-position: center .25rem;
+	background-repeat: no-repeat;
+	background-size: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 4rem;
 }
 
 .compat .browser.supported {
@@ -161,6 +164,16 @@ h3 .subtext {
 .compat .browser-safari,
 .compat .browser-safari_ios {
   background-image: url(./safari.svg);
+}
+
+.compat .browser .name {
+  font-weight: bold;
+}
+
+.compat .browser .date,
+.compat .browser .bug {
+  font-style: italic;
+  font-size: 0.75rem;
 }
 
 .feature .resources,

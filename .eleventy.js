@@ -1,13 +1,13 @@
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const BROWSERS = [
-  { id: "chrome", name: "Chrome" },
-  { id: "chrome_android", name: "Chrome on Android" },
-  { id: "edge", name: "Edge" },
-  { id: "firefox", name: "Firefox" },
-  { id: "firefox_android", name: "Firefox on Android" },
-  { id: "safari", name: "Safari" },
-  { id: "safari_ios", name: "Safari on iOS" },
+  "chrome",
+  "chrome_android",
+  "edge",
+  "firefox",
+  "firefox_android",
+  "safari",
+  "safari_ios",
 ];
 
 const MDN_URL_ROOT = "https://developer.mozilla.org/docs/web/";
@@ -131,15 +131,15 @@ function augmentFeatureData(id, feature, bcd) {
   
   // Add impl_url links, if any, per browser.
   const browserImplUrls = Object.values(BROWSERS).reduce((acc, browser) => {
-    acc[browser.id] = [];
+    acc[browser] = [];
     return acc;
   }, {});
 
   for (const { compat } of bcdKeysData) {
     for (const browser of BROWSERS) {
-      const browserSupport = compat.support[browser.id];
+      const browserSupport = compat.support[browser];
       if (!browserSupport.version_added && browserSupport.impl_url) {
-        browserImplUrls[browser.id] = [...new Set([...browserImplUrls[browser.id], browserSupport.impl_url])];
+        browserImplUrls[browser] = [...new Set([...browserImplUrls[browser], browserSupport.impl_url])];
       }
     }
   }
@@ -147,11 +147,21 @@ function augmentFeatureData(id, feature, bcd) {
   feature.implUrls = browserImplUrls;
 }
 
+let features = null;
+let bcd = null;
+
 async function getDeps() {
-  const { default: features } = await import("web-features");
-  const { default: bcd } = await import("@mdn/browser-compat-data", {
-    assert: { type: "json" },
-  });
+  if (!features) {
+    const module = await import("web-features");
+    features = module.default;
+  }
+
+  if (!bcd) {
+    const json = await import("@mdn/browser-compat-data", {
+      assert: { type: "json" },
+    });
+    bcd = json.default;
+  }
 
   return { features, bcd };
 }
@@ -165,20 +175,26 @@ module.exports = function (eleventyConfig) {
       assert: { type: "json" },
     });
 
-    const { default: bcdPackageJson } = await import("./node_modules/@mdn/browser-compat-data/package.json", {
-      assert: { type: "json" },
-    });
+    const { bcd } = await getDeps();
 
     return {
       "date": (new Date()).toLocaleDateString(),
       "webFeatures": webFeaturesPackageJson.version,
-      "bcd": bcdPackageJson.version
+      "bcd": bcd.__meta.version
     };
   });
 
   // FIXME: Ideally, web-features would have this data.
   eleventyConfig.addGlobalData("browsers", async () => {
-    return BROWSERS;
+    const { bcd } = await getDeps();
+
+    return BROWSERS.map(browser => {
+      return {
+        id: browser,
+        name: bcd.browsers[browser].name,
+        releases: bcd.browsers[browser].releases
+      };
+    });
   });
 
   eleventyConfig.addGlobalData("allFeatures", async () => {
