@@ -13,28 +13,19 @@ jobs:
       - name: Check-out the repository
         uses: actions/checkout@v2
 
-      - name: Check for dependencies updates
-        run: npx npm-check-updates -u
+      - name: Install dependency updates
+        run: |
+          npx npm-check-updates -u
+          npm install
+          npm update web-features
 
-      - name: Install the npm dependencies
-        uses: bahmutov/npm-install@v1
-      
-      - name: Force update web-features to latest commit
-        run: npm update web-features
-      
+      - name: Generate site
+        run: npm run build
+
       - name: Commit dependency changes
         run: |
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git config --local user.name "${{ github.actor }}"
           git add .
-          git commit -m "Bump deps" --allow-empty
-          git push origin main
-
-      - name: Generate site
-        run: npm run build
-
-      - name: Commit all new files
-        run: |
-          git add .
-          git commit -m "Update site" --allow-empty
+          git commit -m "Bump deps and update site" --allow-empty
           git push origin main
