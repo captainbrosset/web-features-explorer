@@ -197,6 +197,58 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addGlobalData("perMonth", async () => {
+    const { features, bcd } = await getDeps();
+
+    const monthly = new Map();
+
+    for (const id in features) {
+      const feature = features[id];
+      augmentFeatureData(id, feature, bcd);
+
+      if (feature.status.baseline === "high") {
+        // If this is a baseline high feature.
+        const yearMonth = feature.status.baseline_high_date.substring(0, 7);
+        if (!monthly.has(yearMonth)) {
+          monthly.set(yearMonth, {});
+        }
+        if (!monthly.get(yearMonth).high) {
+          monthly.get(yearMonth).high = [];
+        }
+        monthly.get(yearMonth).high.push(feature);
+      } else if (feature.status.baseline === "low") {
+        // If this is a baseline low feature.
+        const yearMonth = feature.status.baseline_low_date.substring(0, 7);
+        if (!monthly.has(yearMonth)) {
+          monthly.set(yearMonth, {});
+        }
+        if (!monthly.get(yearMonth).low) {
+          monthly.get(yearMonth).low = [];
+        }
+        monthly.get(yearMonth).low.push(feature);
+      } else {
+        // This is not a baseline feature, check each supported browser's release dates.
+        for (const browser of BROWSERS) {
+          const version = feature.status.support[browser];
+          if (version) {
+            const browserReleaseYearMonth = bcd.browsers[browser].releases[version].release_date.substring(0, 7);
+            if (!monthly.has(browserReleaseYearMonth)) {
+              monthly.set(browserReleaseYearMonth, {});
+            }
+            if (!monthly.get(browserReleaseYearMonth)[browser]) {
+              monthly.get(browserReleaseYearMonth)[browser] = [];
+            }
+            monthly.get(browserReleaseYearMonth)[browser].push(feature);
+          }
+        }
+      }
+    }
+
+    return [...monthly].sort((a, b) => {
+      return (new Date(b[0])) - (new Date(a[0]));
+    });
+  });
+
   eleventyConfig.addGlobalData("allFeatures", async () => {
     const { features, bcd } = await getDeps();
 
