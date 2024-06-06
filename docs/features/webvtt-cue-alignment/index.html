@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>abs() and sign()</title>
+    <title>WebVTT cue alignment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/web-features-explorer/assets/styles.css">
   </head>
@@ -23,15 +23,15 @@
 
     <main>
       
-<div id="abs-sign" class="feature baseline-false">
+<div id="webvtt-cue-alignment" class="feature baseline-false">
   <div class="availability">
   Limited availability
   
   
 </div>
   
-  <h1>abs() and sign()</h1>
-  <p>The <code>abs()</code> and <code>sign()</code> CSS functions compute the absolute value or the sign of the input.</p>
+  <h1>WebVTT cue alignment</h1>
+  <p>The WebVTT cue alignment settings control which part of the cue is aligned with the given line and position. Cue alignment is set using <code>line</code> and <code>position</code> settings in WebVTT files or the <code>lineAlign</code> and <code>positionAlign</code> properties of <code>VTTCue</code> using JavaScript.</p>
   
   <h3>Compatibility</h3>
   <ul class="compat">
@@ -45,7 +45,7 @@
           <span class="bug">
             See
             
-              <a href="https://crbug.com/1407476">crbug.com/1407476</a>
+              <a href="https://crbug.com/633690">crbug.com/633690</a>
             
           </span>
         
@@ -61,7 +61,7 @@
           <span class="bug">
             See
             
-              <a href="https://crbug.com/1407476">crbug.com/1407476</a>
+              <a href="https://crbug.com/633690">crbug.com/633690</a>
             
           </span>
         
@@ -77,7 +77,7 @@
           <span class="bug">
             See
             
-              <a href="https://crbug.com/1407476">crbug.com/1407476</a>
+              <a href="https://crbug.com/633690">crbug.com/633690</a>
             
           </span>
         
@@ -88,8 +88,8 @@
       <span class="name">Firefox</span>
       
       
-        <span class="version">118</span>
-        <span class="date">Released on 2023-09-26</span>
+        <span class="version">31</span>
+        <span class="date">Released on 2014-07-22</span>
       
     </li>
   
@@ -97,8 +97,8 @@
       <span class="name">Firefox for Android</span>
       
       
-        <span class="version">118</span>
-        <span class="date">Released on 2023-09-26</span>
+        <span class="version">31</span>
+        <span class="date">Released on 2014-07-22</span>
       
     </li>
   
@@ -106,8 +106,8 @@
       <span class="name">Safari</span>
       
       
-        <span class="version">15.4</span>
-        <span class="date">Released on 2022-03-14</span>
+        <span class="version">14.1</span>
+        <span class="date">Released on 2021-04-26</span>
       
     </li>
   
@@ -115,8 +115,8 @@
       <span class="name">Safari on iOS</span>
       
       
-        <span class="version">15.4</span>
-        <span class="date">Released on 2022-03-14</span>
+        <span class="version">14.5</span>
+        <span class="date">Released on 2021-04-26</span>
       
     </li>
   
@@ -126,11 +126,11 @@
   <div class="mdn-docs">
     <h3>MDN docs</h3>
     
-      <ul class="mdn-docs-area link-list" data-area="css">
+      <ul class="mdn-docs-area link-list" data-area="api">
         
-          <li class="link-list-item"><a href="https://developer.mozilla.org/docs/Web/CSS/abs">abs property</a></li>
+          <li class="link-list-item"><a href="https://developer.mozilla.org/docs/Web/API/VTTCue/lineAlign">VTTCue.lineAlign</a></li>
         
-          <li class="link-list-item"><a href="https://developer.mozilla.org/docs/Web/CSS/sign()">sign() property</a></li>
+          <li class="link-list-item"><a href="https://developer.mozilla.org/docs/Web/API/VTTCue/positionAlign">VTTCue.positionAlign</a></li>
         
       </ul>
     
@@ -142,7 +142,9 @@
     <h3>Specifications</h3>
     <ul class="link-list">
       
-        <li class="link-list-item"><a href="https://drafts.csswg.org/css-values-4/#sign-funcs">https://drafts.csswg.org/css-values-4/#sign-funcs</a></li>
+        <li class="link-list-item"><a href="https://w3c.github.io/webvtt/#dom-vttcue-linealign">https://w3c.github.io/webvtt/#dom-vttcue-linealign</a></li>
+      
+        <li class="link-list-item"><a href="https://w3c.github.io/webvtt/#dom-vttcue-positionalign">https://w3c.github.io/webvtt/#dom-vttcue-positionalign</a></li>
       
     </ul>
   </div>
@@ -153,22 +155,22 @@
     <li>
       <strong>Chromium</strong>
       <ul>
-        <li><a href="https://chromestatus.com/features#abs() and sign()">ChromeStatus</a></li>
-        <li><a href="https://www.google.com/search?q=implement abs() and sign()+site%3Aissues.chromium.org">Bugs</a></li>
+        <li><a href="https://chromestatus.com/features#WebVTT cue alignment">ChromeStatus</a></li>
+        <li><a href="https://www.google.com/search?q=implement WebVTT cue alignment+site%3Aissues.chromium.org">Bugs</a></li>
       </ul>
     </li>
     <li>
       <strong>Mozilla</strong>
       <ul>
-        <li><a href="https://github.com/mozilla/standards-positions/issues?q=abs() and sign()">Standard positions</a></li>
-        <li><a href="https://www.google.com/search?q=implement abs() and sign()+site%3Abugzilla.mozilla.org">Bugs</a></li>
+        <li><a href="https://github.com/mozilla/standards-positions/issues?q=WebVTT cue alignment">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement WebVTT cue alignment+site%3Abugzilla.mozilla.org">Bugs</a></li>
       </ul>
     </li>
     <li>
       <strong>WebKit</strong>
       <ul>
-        <li><a href="https://github.com/WebKit/standards-positions/issues?q=abs() and sign()">Standard positions</a></li>
-        <li><a href="https://www.google.com/search?q=implement abs() and sign()+site%3Abugs.webkit.org">Bugs</a></li>
+        <li><a href="https://github.com/WebKit/standards-positions/issues?q=WebVTT cue alignment">Standard positions</a></li>
+        <li><a href="https://www.google.com/search?q=implement WebVTT cue alignment+site%3Abugs.webkit.org">Bugs</a></li>
       </ul>
     </li>
   </ul>
@@ -176,9 +178,9 @@
   <h3>BCD data</h3>
   <ul class="resources">
     
-      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/css/types/abs.json">css.types.abs</a></li>
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/VTTCue.json">api.VTTCue.lineAlign</a></li>
     
-      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/css/types/sign.json">css.types.sign</a></li>
+      <li><a href="https://github.com/mdn/browser-compat-data/blob/main/api/VTTCue.json">api.VTTCue.positionAlign</a></li>
     
   </ul>
 </div>
