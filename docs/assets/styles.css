@@ -32,6 +32,10 @@ h1 {
   margin: 2rem 0;
 }
 
+#archived p {
+  background: yellow;
+}
+
 .intro {
   margin: 2rem 0;
 }
