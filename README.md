@@ -1,3 +1,7 @@
+# ARCHIVED REPOSITORY
+
+**This repository is now archived. It was an early investigation for a W3C WebDX project which now lives at: https://github.com/web-platform-dx/web-features-explorer**
+
 # web-features explorer
 
 A set of web pages to visualize the data that's maintained in the [web-platform-dx/web-features](https://github.com/web-platform-dx/web-features/) repository.
